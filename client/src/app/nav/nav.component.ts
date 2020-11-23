@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ToastrModule, ToastrService } from 'ngx-toastr';
+import { ToastrService } from 'ngx-toastr';
 //import { Observable } from 'rxjs';
 //import { User } from '../_models/user';
 import { AccountService } from '../_services/account.service';
@@ -24,10 +24,6 @@ export class NavComponent implements OnInit {
       respone => {        
         console.log(respone);
         this.router.navigateByUrl('/members');
-      },
-      error =>{
-        console.log(error);
-        this.toastr.error(error.error);        
       }) 
   }
 
