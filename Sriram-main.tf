@@ -1,3 +1,4 @@
+#New line added for testing purpose of PULL REQUEST IN GITHUB
 terraform {
   required_providers {
     mongodbatlas = {
